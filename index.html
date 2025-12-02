@@ -9,7 +9,7 @@
       href="./assets/logo-dark.png"
       type="image/x-icon"
     />
-    <!-- daysiui cdn & tailwind cdn -->
+    <!-- daisyui cdn & tailwind cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
@@ -18,5 +18,18 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
-  <body></body>
+  <body>
+    <nav class="flex justify-between mt-6 max-w-7xl mx-auto">
+      <div>
+        <img src="./assets/Logo.png" alt="">
+      </div>
+
+      <div class=" flex gap-4">
+        <p class="flex justify-center items-center bg-lime-100 w-20 h-10 p-2 gap-2 rounded-full font-bold"><span id="heart-count">0</span>❤️</p>
+        <p class="flex justify-center items-center bg-lime-100 w-20 h-10 p-2 gap-2 rounded-full font-bold"><span id="coins-count">100</span>🪙</p>
+        <p class="flex justify-center items-center bg-green-600 w-24 h-10 p-2 gap-2 rounded-full text-white"><span id="copy-count">0</span>Copy</p>
+      </div>
+    </nav>
+  </body>
+  <script src="./index.js"></script>
 </html>
