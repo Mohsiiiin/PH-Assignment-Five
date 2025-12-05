@@ -67,6 +67,12 @@ for (let callButton of callButtons){
         historyList.appendChild(newHistory)
 
     })
+
+    // Clear history button
+    clearBtn.addEventListener("click", function () {
+    historyList.innerHTML = "";
+    });
+
 }
 
 
