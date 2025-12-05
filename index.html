@@ -53,7 +53,8 @@
         </p>
       </div>
     </nav>
-    <!--  -->
+
+    <!-- hero-section -->
     <main
       class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col justify-center items-center text-center gap-4 py-8"
     >
@@ -368,17 +369,21 @@
         </div>
 
         <!-- call-history-section -->
-        <div class="bg-white rounded-xl col-span-1 flex justify-between h-full p-6">
-          <div>
+        <div id="history" class="bg-white rounded-xl col-span-1 flex flex-col h-full p-6">
+          <div  class="flex justify-between items-center mb-4" >
             <h1 class="text-xl font-semibold">
               <i class="fa-regular fa-clock"></i> Call History
             </h1>
-          </div>
-          <div>
-            <button
+             <button
               id="clear-btn"
-              class="bg-green-600 w-20 h-10 p-2 gap-2 rounded-full text-white">Clear
+              class="bg-green-600 w-20 h-10 p-2 gap-2 rounded-full text-white"
+            >
+              Clear
             </button>
+          </div>
+          
+          <!-- new call history list add div -->
+          <div id="history-list" class="flex flex-col gap-2 overflow-auto max-h-[60vh]">
           </div>
         </div>
       </div>
