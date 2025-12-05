@@ -61,6 +61,11 @@ for (let callButton of callButtons){
 
         alert('calling'+ subTitle + ' ' + subNmbr);
 
+        // call-history child....
+        const newHistory = document.createElement('p');
+        newHistory.innerText = subTitle +' - ' + subNmbr;
+        historyList.appendChild(newHistory)
+
     })
 }
 
